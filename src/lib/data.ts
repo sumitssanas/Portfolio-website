@@ -1,0 +1,83 @@
+import type { Job, KanbanColumn } from './types';
+
+export const KANBAN_COLUMNS: KanbanColumn[] = [
+  { id: 'saved', title: 'Saved' },
+  { id: 'applied', title: 'Applied' },
+  { id: 'interview', title: 'Interview' },
+  { id: 'offer', title: 'Offer' },
+];
+
+export const MOCK_JOBS: Job[] = [
+  {
+    id: '1',
+    title: 'Senior Frontend Developer',
+    company: 'Innovate Inc.',
+    location: 'San Francisco, CA',
+    description: 'Lead the development of our next-generation user interfaces with React and TypeScript.',
+    url: '#',
+    status: 'saved',
+  },
+  {
+    id: '2',
+    title: 'Product Manager',
+    company: 'FutureTech',
+    location: 'New York, NY',
+    description: 'Define and execute the product roadmap for our AI-powered analytics platform.',
+    url: '#',
+    status: 'saved',
+  },
+  {
+    id: '3',
+    title: 'UX/UI Designer',
+    company: 'Creative Solutions',
+    location: 'Remote',
+    description: 'Design intuitive and beautiful user experiences for our suite of mobile applications.',
+    url: '#',
+    status: 'applied',
+  },
+  {
+    id: '4',
+    title: 'Backend Engineer (Go)',
+    company: 'ScaleUp',
+    location: 'Austin, TX',
+    description: 'Build and maintain scalable microservices that power our core platform.',
+    url: '#',
+    status: 'interview',
+  },
+  {
+    id: '5',
+    title: 'DevOps Engineer',
+    company: 'CloudWorks',
+    location: 'Remote',
+    description: 'Automate our infrastructure and deployment pipelines using Kubernetes and Terraform.',
+    url: '#',
+    status: 'applied',
+  },
+  {
+    id: '6',
+    title: 'Data Scientist',
+    company: 'DataDriven Co.',
+    location: 'Boston, MA',
+    description: 'Analyze large datasets to extract actionable insights and build predictive models.',
+    url: '#',
+    status: 'saved',
+  },
+  {
+    id: '7',
+    title: 'Full-Stack Engineer',
+    company: 'ConnectAll',
+    location: 'Chicago, IL',
+    description: 'Work across the entire stack, from our React frontend to our Node.js backend.',
+    url: '#',
+    status: 'saved',
+  },
+  {
+    id: '8',
+    title: 'Marketing Specialist',
+    company: 'GrowthHackers',
+    location: 'Remote',
+    description: 'Develop and execute digital marketing campaigns to drive user acquisition.',
+    url: '#',
+    status: 'offer',
+  },
+];

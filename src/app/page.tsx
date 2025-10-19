@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Eye, Briefcase, Code, Cpu, Database, Cloud, Wrench, Languages, Github, ExternalLink, Activity, BookOpen, Handshake, Linkedin, Mail, Phone, UserCheck } from "lucide-react";
 import Image from "next/image";
+import heroImage from "@/public/image/image.png";
 import Link from "next/link";
 
 const skills = [
@@ -142,11 +143,12 @@ export default function PortfolioPage() {
                         <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                             <div className="absolute inset-0 border-4 border-primary rounded-full transform rotate-12"></div>
                             <Image
-                                src="/image/image.png"
+                                src={heroImage}
                                 alt="Sumit Sanas"
                                 width={400}
                                 height={400}
                                 className="rounded-full object-cover w-full h-full p-2"
+                                priority
                             />
                         </div>
                     </div>

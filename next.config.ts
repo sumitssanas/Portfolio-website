@@ -1,7 +1,11 @@
 import type { NextConfig } from 'next';
 
+const repoBasePath = '/Portfolio-website';
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: repoBasePath,
+  assetPrefix: repoBasePath,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,6 +13,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -23,7 +28,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'firebasestorage.googleapis.com',
-      }
+      },
     ],
   },
 };

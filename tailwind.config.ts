@@ -18,8 +18,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
-        poppins: ['var(--font-poppins)', ...fontFamily.sans],
+        sans: [...fontFamily.sans],
+        poppins: [...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",

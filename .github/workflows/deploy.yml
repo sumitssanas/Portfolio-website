@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+      - run: npm install --no-progress
       - run: npm ci
       - run: npm run pages:build
       - uses: actions/upload-pages-artifact@v3

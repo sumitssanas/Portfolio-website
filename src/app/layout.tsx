@@ -1,22 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Github, Linkedin, Code } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
-});
 
 export const metadata: Metadata = {
   title: 'Sumit Sanas - Portfolio',
@@ -40,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className="!scroll-smooth">
-      <body className={cn("antialiased font-sans", inter.variable, poppins.variable)}>
+      <body className={cn("antialiased font-sans")}>
         <div className="flex flex-col min-h-screen w-full">
           <header className="fixed top-0 left-0 right-0 z-50 flex h-16 items-center justify-between px-4 sm:px-8 lg:px-12 backdrop-blur-sm bg-background/90 border-b border-border">
             <div className="flex items-center gap-4">
